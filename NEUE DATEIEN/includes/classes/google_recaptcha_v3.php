@@ -5,7 +5,7 @@
  * @copyright Copyright 2003-2022 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at 
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: google_recaptcha_v3.php 2022-04-11 17:06:29Z webchills $
+ * @version $Id: google_recaptcha_v3.php 2022-11-22 08:31:29Z webchills $
  */
 class GoogleRecaptchaV3
 {
@@ -33,6 +33,7 @@ class GoogleRecaptchaV3
                     // don't forget to link the html form name with an action on the plugin config
                     $this->notifiersToCheck = array(
                         'NOTIFY_CONTACT_US_CAPTCHA_CHECK' => 'contact',
+			'NOTIFY_ASK_A_QUESTION_CAPTCHA_CHECK' => 'ask_a_question',
                        // 'NOTIFY_CREATE_ACCOUNT_CAPTCHA_CHECK' => 'create_account',
                        // 'NOTIFY_REVIEWS_WRITE_CAPTCHA_CHECK' => 'review_text',
                         //'NOTIFY_HEADER_START_CHECKOUT_CONFIRMATION' => 'checkout_confirmation',
